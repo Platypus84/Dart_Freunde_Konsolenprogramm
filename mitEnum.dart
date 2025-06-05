@@ -36,9 +36,8 @@ void main() {
   // Geschwindigkeit fest int geschwindigkeit = 0; // km/h
 
   // Eingabe der Entfernung zu einem Freund
-  print(
-    "Gib deinen Namen an (Max, Peter, Anna, Lena) ein, um die Entfernung anzuzeigen:",
-  );
+  print("Gib deinen Namen an:");
+
   String? inputUserName = stdin.readLineSync();
 
   // Eingabe der Entfernung zu einem Freund

@@ -18,7 +18,8 @@ void main() {
   double zeitAnna = reiseroute["Anna"]! / geschwindigkeit; // Zeit für Anna
 
   //Gesamtdistanz und Fahrzeit
-  int gesamtKm = reiseroute["Max"]! +
+  int gesamtKm =
+      reiseroute["Max"]! +
       reiseroute["Peter"]! +
       reiseroute["Anna"]!; // Gesamtdistanz
   double gesamtZeit = zeitMax + zeitPeter + zeitAnna;
@@ -26,9 +27,11 @@ void main() {
   print("Deine Reiseroute bei $geschwindigkeit km/h:");
   print("1. Max: ${reiseroute["Max"]} km, Zeit: ${zeitMax} Stunden");
   print(
-      "2. Peter: ${reiseroute["Peter"]} km, Zeit: ${zeitPeter.toStringAsFixed(2)} Stunden");
+    "2. Peter: ${reiseroute["Peter"]} km, Zeit: ${zeitPeter.toStringAsFixed(2)} Stunden",
+  );
   print(
-      "3. Anna: ${reiseroute["Anna"]} km, Zeit: ${zeitAnna.toStringAsFixed(2)} Stunden");
+    "3. Anna: ${reiseroute["Anna"]} km, Zeit: ${zeitAnna.toStringAsFixed(2)} Stunden",
+  );
   print("Gesamtdistanz: $gesamtKm km");
   print("Gesamtfahrzeit: ${gesamtZeit.toStringAsFixed(2)} Stunden");
 }

@@ -55,7 +55,7 @@ void main() {
     );
   } else {
     print(
-      "Deine Eingabe ist nicht korrekt. Es können nur Auto, Zug, Fahrrad oder Bus als Begriff eingegeben werden.",
+      "Deine Eingabe ist nicht korrekt. Es können nur Max, Peter, Anna oder Lena als Begriff eingegeben werden.",
     );
   }
 

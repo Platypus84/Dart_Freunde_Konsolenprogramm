@@ -41,9 +41,7 @@ void main() {
   String? inputUserName = stdin.readLineSync();
 
   // Eingabe der Entfernung zu einem Freund
-  print(
-    "Gib einen Namen deiner Freunde (Max, Peter, Anna, Lena) ein, um die Entfernung anzuzeigen:",
-  );
+  print("Gib einen Namen deiner Freunde‚ ein, um die Entfernung anzuzeigen:");
   String? inputName = stdin.readLineSync();
 
   bool nameExists = distances.containsKey(inputName);
@@ -60,10 +58,10 @@ void main() {
   }
 
   // Eingabe der Geschwindigkeit
-  print("Bitte gib die Geschwindigkeit in km/h ein:");
-  String? eingabe = stdin.readLineSync();
+  // print("Bitte gib die Geschwindigkeit in km/h ein:");
+  // String? eingabe = stdin.readLineSync();
 
-  int geschwindigkeit = int.parse(eingabe ?? "90");
+  // int geschwindigkeit = int.parse(eingabe ?? "90");
 
   // Eingabe des Verkehrsmittel
   print(

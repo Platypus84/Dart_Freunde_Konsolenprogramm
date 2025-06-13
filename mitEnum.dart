@@ -31,13 +31,18 @@ void main() {
   final String? typeOfTransport;
   int? speed = 0;
 
+  // for (var transportType in transportSpeeds.entries) {
+  //   print(
+  //     "Transportmittel: ${transportType.key} und Transportgeschwindigkeit: ${transportType.value}",
+  //   );
+  // }
+
   // Auswahl des Transportmittels
   // Transportmittel mittel = Transportmittel.fahrrad; // Standardwert
   // Geschwindigkeit fest int geschwindigkeit = 0; // km/h
 
   // Eingabe der Entfernung zu einem Freund
   print("Gib deinen Namen an:");
-
   String? inputUserName = stdin.readLineSync();
 
   // Eingabe der Entfernung zu einem Freund
@@ -47,9 +52,9 @@ void main() {
   bool nameExists = distances.containsKey(inputName);
   if (nameExists) {
     String? friendName = inputName;
-    int distance = distances[friendName][inputUserName];
+    //int distance = distances[friendName][inputUserName];
     print(
-      "Die Distanz zwischen dir ($inputUserName) und $friendName beträgt $distance km/h.",
+      "Die Distanz zwischen dir ($inputUserName) und $friendName beträgt distance km/h.",
     );
   } else {
     print(
@@ -60,21 +65,13 @@ void main() {
   // Eingabe der Geschwindigkeit
   // print("Bitte gib die Geschwindigkeit in km/h ein:");
   // String? eingabe = stdin.readLineSync();
-
   // int geschwindigkeit = int.parse(eingabe ?? "90");
 
   // Eingabe des Verkehrsmittel
   print(
     "Bitte gib dein gewünschtes Verkehrsmittel ein (Auto/Zug/Fahrrad/Bus):",
   );
-
   String? inputTypeOfTransport = stdin.readLineSync();
-
-  // for (var transportType in transportSpeeds.entries) {
-  //   print(
-  //     "Transportmittel: ${transportType.key} und Transportgeschwindigkeit: ${transportType.value}",
-  //   );
-  // }
 
   bool keyExists = transportSpeeds.containsKey(inputTypeOfTransport);
   if (keyExists) {
@@ -96,8 +93,8 @@ void main() {
 
   //Fahrzeitberechnung
   double zeitMax = reiseroute["Max"]! / speed!; // Zeit für Max
-  double zeitPeter = reiseroute["Peter"]! / speed!; // Zeit für Peter
-  double zeitAnna = reiseroute["Anna"]! / speed!; // Zeit für Anna
+  double zeitPeter = reiseroute["Peter"]! / speed; // Zeit für Peter
+  double zeitAnna = reiseroute["Anna"]! / speed; // Zeit für Anna
 
   //Gesamtdistanz und Fahrzeit
   int gesamtKm =

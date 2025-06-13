@@ -15,7 +15,7 @@ void main() {
   //Fahrzeitberechnung
   double zeitMax = reiseroute["Max"]! / geschwindigkeit; // Zeit für Max
   double zeitPeter = reiseroute["Peter"]! / geschwindigkeit; // Zeit für Peter
-  double zeitAnna = reiseroute["Anna"]! / geschwindigkeit; // Zeit für Anna
+  double zeitAnna = reiseroute["Anna"]! / geschwindigkeit; // Zeit für Ann
 
   //Gesamtdistanz und Fahrzeit
   int gesamtKm =
